@@ -10,6 +10,10 @@ jobs:
       env-name: ${{ steps.env-name.outputs.environment }}
     steps:
       - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
       - name: Install Dependencies with Apt Get
         run: |
           sudo apt-get update
