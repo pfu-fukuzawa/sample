@@ -13,6 +13,8 @@ def lambda_handler(event, context):
    print(f"FIRST: {first}, SECOND: {second}, THIRD: {third}")
    
    result = int(result) + int(second)
+
+   print(f"test 1")
    
    print(f"RESULT: {result}")
    
